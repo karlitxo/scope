@@ -100,7 +100,7 @@
     "clean": "rm build/app.js",
     "noprobe": "../scope stop && ../scope launch --no-probe --app.window 8760h",
     "loadreport": "npm run noprobe && sleep 1 && curl -X POST -H \"Content-Type: application/json\" http://$BACKEND_HOST/api/report -d",
-    "s3-publish": "aws s3 cp weave-scope.tgz s3://weaveworks-npm-modules/weave-scope/ --acl public-read"
+    "s3-publish": "aws s3 cp weave-scope.tgz s3://weaveworks-js-modules/weave-scope/ --acl public-read"
   },
   "jest": {
     "transform": {
